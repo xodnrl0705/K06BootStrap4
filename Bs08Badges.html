@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bs08Badges.html</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class = "container">
+    <h2>뱃지</h2>
+    <span class="badge badge-primary">Primary</span>
+    <span class="badge badge-pill badge-secondary">Secondary</span>
+    <span class="badge badge-success">Success</span>
+    <span class="badge badge-pill badge-danger">Danger</span>
+    <span class="badge badge-warning">Warning</span>
+    <span class="badge badge-pill badge-info">Info</span>
+    <span class="badge badge-light">Light</span>
+    <span class="badge badge-dark">Dark</span>
+
+
+    <h4>게시판</h4>
+    <div class="row">
+        <div class="col-3">
+            <!-- 좌측메뉴영역 -->
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  공지사항
+                  <span class="badge badge-warning badge-pill">12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  자유게시판
+                  <span class="badge badge-warning badge-pill">50</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center active">
+                  Q&A
+                  <span class="badge badge-warning badge-pill">99</span>
+                </li>
+            </ul>
+        </div>
+        <div class="col-9">
+            <!-- 게시판영역 -->
+            <!-- table>tr*3>td*4 -->
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr class="text-center">
+                        <td>No</td>
+                        <td>제목</td>
+                        <td>작성자</td>
+                        <th>조회수</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td>100</td>
+                        <td>부트스트랩 수업중이에욤 <span class = "badge badge-danger">New</span></td>
+                        <td>길똥이</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>99</td>
+                        <td><span class = "badge badge-secondary">질문 </span>뱃지는 어떻게 쓰나요??</td>
+                        <td>말똥이</td>
+                        <td>19</td>
+                    </tr>
+                </tbody>
+            </table>
+                <!-- 
+                    게시판에서 페이지번호를 표시할때 paginationz클래스를 사용한다.
+                    disabled 클래스 : 해당 페이지 번호가 비활성화 된다. 오버시 효과없음.
+                    active 클래스 : 해당 페이지를 다른 색으로 표현한다.
+                -->
+            
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="javascript:void(0);">이전블럭</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="javascript:void(0);">2</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0);">다음블럭</a></li>
+                </ul>
+        </div>
+    </div>
+
+</div>
+    <br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bs06Alerts.html</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <h2>Alerts</h2>
+        
+        <h4>기본 Alerts - 닫기 기능 없음</h4>
+        <div class="alert alert-success">
+            <strong>Success!</strong> Indicates a successful or positive action.
+          </div>
+        
+        <h4>Alerts - 링크추가</h4>
+        <div class="alert alert-danger">
+        <strong>Success!</strong> You should <a href="#" class="alert-link">누르지마라</a>.
+        </div>
+
+        <h4>닫기 기능 추가 - 애니메이션 없음</h4>
+        <div class="alert alert-info alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Info!</strong> Indicates a successful or positive action.
+        </div>
+        
+        <h4>닫기 + 애니메이션</h4>
+        <div class="alert alert-primary alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Primary!</strong> Indicates an important action.
+          </div>
+    </div>    
+</body>
+</html>

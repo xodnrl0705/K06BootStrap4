@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bs07Buttons.html</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <h2>버튼(Button)</h2>
+
+        <h4>기본스타일</h4>
+        <button type="button" class="btn">Basic</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-outline-warning">Warning(outline)</button>
+        <button type="button" class="btn btn-outline-danger">Danger(outline)</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-link">Link</button>
+        <input type="button" value="input버튼" class="btn btn-dark">
+
+        <h4>Spinner적용된 버튼 - Loading...!!</h4>
+        <button class="btn btn-success">
+            <span class="spinner-border spinner-border-sm"></span>
+        </button>
+          
+        <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+            Loading..활성화된버튼
+        </button>
+          
+        <button class="btn btn-info" disabled>
+            <span class="spinner-border spinner-border-sm"></span>
+            Loading..비활성화된버튼
+        </button>
+          
+        <button class="btn btn-dark" disabled>
+            <span class="spinner-grow spinner-grow-sm"></span>
+            결제진행중..
+        </button>
+
+        <h4>그룹화된 버튼 - 가로형</h4>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">메뉴1</button>
+            <button type="button" class="btn btn-primary">메뉴2</button>
+            <button type="button" class="btn btn-primary">메뉴3</button>
+        </div>
+
+        <h4>그룹화된 버튼 - 세로형</h4>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-info">메뉴1</button>
+            <button type="button" class="btn btn-info">메뉴2</button>
+            <button type="button" class="btn btn-info">메뉴3</button>
+        </div>
+          
+        <h4>버튼 + 드롭다운 메뉴</h4>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">회원가입</button>
+            <button type="button" class="btn btn-primary">로그인</button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                고객센터
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">질문과답변</a>
+                <a class="dropdown-item" href="#">자주묻는질문</a>
+              </div>
+            </div>
+        </div>
+
+        <h4>버튼 + 드롭다운 메뉴 + block속성 추가</h4>
+        <div class="btn-group btn-block">
+            <button type="button" class="btn btn-primary">회원가입</button>
+            <button type="button" class="btn btn-primary">로그인</button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary dropdown-toggle" 
+                data-toggle="dropdown">
+                고객센터
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">질문과답변</a>
+                <a class="dropdown-item" href="#">자주묻는질문</a>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

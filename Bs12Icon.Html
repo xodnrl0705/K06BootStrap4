@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bs12Icon.Html</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <h2>아이콘 사용하기</h2>
+
+        <!-- 부트스트랩4에서 icon을 사용하기 위해서는 해당 CDN이 필요하다. -->
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+        <!-- 
+            아이콘은 뱃지, 버튼 등 텍스트가 입력되는 곳이면 어디든
+            사용 가능하다. 
+        -->
+        <div class="input-group" style="width:300px; margin-left: 20px;" >
+            <input type="text" class="form-control" placeholder="검색하기">
+            <div class="input-group-append">
+              <button class="btn btn-success" type="submit">
+                <i class='fas fa-capsules' style='font-size:20px; color:red'></i>
+              </button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
